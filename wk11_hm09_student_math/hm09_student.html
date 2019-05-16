@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8">
+    <title>hm09 : Javascript object</title>
+    <style></style>
+    <script>
+        //리러털 표기법으로 사용자 객체 만들기
+ var student = {
+        // 프로퍼티 생성 및 초기화
+        name: "손성빈",
+        id: "hm09",
+        age: "23", 
+        gender: "남자",
+        interest : "music",
+        birthplace : "포항",
+        nationality : "대한민국", 
+        job : "대학생",
+     // 메소드 작성
+      info: function(){
+      document.write("student info" + "<br>");
+      document.write("이름 : " + student.name + "<br>");
+      document.write("아이디 : " + student.id + "<br>");
+      document.write("나이 : " + student.age + "<br>");
+      document.write("성별 : " + student.gender + "<br>");
+      document.write("취미 : " + student.interest + "<br>");
+      document.write("출생지 : " + student.birthplace + "<br>");
+      document.write("국적 : " + student.nationality + "<br>");
+      document.write("직업 : " + student.job + "<br>");
+      }
+ };
+    </script>
+    </head>
+  <body>
+      <h3>리터널 표기법으로 사용자 객체 만들기</h3>
+      <hr />
+      <script>
+          document.write(student.info());
+      </script>
+    </body>
+</html>
