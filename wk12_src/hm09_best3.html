@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>window.location으로 웹 사이트 접속</title>
+    <script>
+    function load()
+    {
+        var select = document.getElementById("site");
+        window.location=select.options[select.selectedIndex].value;
+    }
+    </script>
+    </head>
+    <body>
+        <h3>hm09 favoirte 3 travel</h3>
+        <hr>
+        사이트 선택 :
+        <select id="site">
+            <option value="https://ko.wikipedia.org/wiki/%EB%81%84%EB%9D%BC%EB%B9%84%EC%A3%BC" selected>위키백과
+                <option value="https://www.tripadvisor.co.kr/Attractions-g297927-Activities-Krabi_Town_Krabi_Province.html">크라비오락거리및숙식
+                    <option value = "https://www.tripadvisor.co.kr/Attractions-g297927-Activities-c61-t52-Krabi_Town_Krabi_Province.html">해변
+                    <option value ="https://www.tripadvisor.co.kr/Attractions-g297927-Activities-c61-Krabi_Town_Krabi_Province.html">오락거리
+                    <option value="https://www.tripadvisor.co.kr/Restaurants-g297927-Krabi_Town_Krabi_Province.html">먹거리
+                    </select>
+                    <p>
+                        <button onclick="load()">웹 사이트 접속</button>
+                    </body>
+</html>
